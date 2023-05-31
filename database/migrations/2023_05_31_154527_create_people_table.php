@@ -19,10 +19,10 @@ class CreatePeopleTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('phone');
-            $table->string('address');
-            $table->string('city');
-            $table->string('country');
-            $table->string('gender');
+            $table->string('address')->default('');
+            $table->string('city')->default('');
+            $table->string('country')->default('');
+            $table->string('gender')->default('');
             $table->timestamps();
         });
 
